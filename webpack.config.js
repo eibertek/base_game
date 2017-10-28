@@ -30,15 +30,28 @@ var config = {
       {
         test: /\.svg$/,
         loader: 'svg-inline-loader'
-      },      
+      },
       {
-        test : /\.js?/,
-        include : APP_DIR,
-        loader : 'babel-loader',
-        exclude: /node_modules/,
-        query: {
-          presets: ['es2015', 'react']
-        }
+          test: /\.json$/,
+          loader: 'json-loader'
+      },
+      {
+      test : /\.js?/,
+      include : APP_DIR,
+      loader : 'babel-loader?retainLines=true',
+      exclude: /node_modules/,
+      query: {
+        presets: ['es2015', 'react']
+      }
+      },
+      {
+          test : /\.jsx?/,
+          include : APP_DIR,
+          loader : 'babel-loader?retainLines=true',
+          exclude: /node_modules/,
+          query: {
+              presets: ['es2015', 'react']
+          }
       }
     ]
   }  
