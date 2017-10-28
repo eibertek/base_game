@@ -56,3 +56,4 @@ este archivo temporal tendra un json con los cumpleaños del dia y su data.
 la web template traera este archivo y creara el formato
 el img tourl verificara la cantidad de cumpleaños y si hay, generara la imagen
 el snedmail verificara la cantidad de cumpleaños y si hay, enviara el mail
+
