@@ -1,0 +1,6 @@
+<testsuites name="jest tests">
+  <testsuite name="Link changes the class when hovered" tests="1" errors="0" failures="0" skipped="0" timestamp="2017-11-09T23:02:45" time="2.239">
+    <testcase classname="Link changes the class when hovered works AppProvider" name="Link changes the class when hovered works AppProvider" time="0.027">
+    </testcase>
+  </testsuite>
+</testsuites>

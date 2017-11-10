@@ -5,17 +5,24 @@ var BUILD_DIR = path.resolve(__dirname, 'dist/public');
 var APP_DIR = path.resolve(__dirname, 'src/');
 
 var config = {
-  entry: APP_DIR + '/ui/index.js',
+  entry:  ['babel-polyfill', APP_DIR + '/ui/index.js'],
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
   plugins: [
     new webpack.ProvidePlugin({
-            React: 'react',
-            ReactDOM: 'react-dom',
+        React: 'react',
+        ReactDOM: 'react-dom',
     }),
-  ],  
+  ],
+    resolve: {
+        modules: [
+            path.resolve('./src'),
+            'node_modules',
+        ],
+        extensions: ['.js', '.jsx'],
+    },
  module : {
     loaders : [
       {

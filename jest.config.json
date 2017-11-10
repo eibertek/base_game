@@ -1,0 +1,19 @@
+{
+  "testRegex": ".*.spec.js$",
+  "testEnvironment": "jsdom",
+  "moduleNameMapper": {
+    "\\.(jpg|jpeg|png|gif|svg)$": "jest.mock.js",
+    "\\.(css|less|scss)$": "identity-obj-proxy"
+  },
+  "rootDir": "src/ui",
+  "modulePaths": ["src/ui/"],
+  "resetMocks": true,
+  "globals": {
+    "PRODUCTION": false,
+    "CONFIG": { "includeTestProducts": true, "services": {} }
+  },
+  "coverageReporters": ["lcov"],
+  "coverageDirectory": "test-results",
+  "coveragePathIgnorePatterns": ["/node_modules"],
+  "testResultsProcessor": "jest-junit"
+}
