@@ -11,7 +11,7 @@ import structureReducer from './structure.component/reducers/structure.reducer';
 
 let store = createStore(structureReducer, config, applyMiddleware(thunk));
 
-const AppProvider = ({ store }) => {
+export const AppProvider = ({ store }) => {
     return <Provider store={store}>
         <Router>
             <Switch>

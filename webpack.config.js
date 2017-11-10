@@ -12,10 +12,17 @@ var config = {
   },
   plugins: [
     new webpack.ProvidePlugin({
-            React: 'react',
-            ReactDOM: 'react-dom',
+        React: 'react',
+        ReactDOM: 'react-dom',
     }),
-  ],  
+  ],
+    resolve: {
+        modules: [
+            path.resolve('./src'),
+            'node_modules',
+        ],
+        extensions: ['.js', '.jsx'],
+    },
  module : {
     loaders : [
       {

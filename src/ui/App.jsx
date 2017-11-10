@@ -1,3 +1,4 @@
+import React from 'react';
 import StructureComponent from "./structure.component/index";
 
 export default class App extends React.PureComponent {
