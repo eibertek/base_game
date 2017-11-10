@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, combineReducers  } from 'redux';
 import thunk from 'redux-thunk';
-import App from "./App.jsx";
+import App from "./App.container.js";
 import AboutComponent from './about.jsx';
 import config from './mock.js';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -16,8 +16,10 @@ export const AppProvider = ({ store }) => {
         <Router>
             <Switch>
                 <Route exact  path="/" component={App} />
-                <Route exact path="/nam" component={AboutComponent} />
-                <Route path="/nam/:player" component={AboutComponent} />
+                <Route exact path="/screen/:number" render={(props) => (
+                    <App {...props} screenNumber={props.match.params.number} />)}/>
+                />
+                <Route path="/about" component={AboutComponent} />
             </Switch>
         </Router>
     </Provider>;
