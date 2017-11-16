@@ -1,5 +1,4 @@
 import React from 'react';
-import Screen from "./screen.component/index";
 
 export default class App extends React.PureComponent {
     constructor(props) {
@@ -10,6 +9,9 @@ export default class App extends React.PureComponent {
     }
 
     render() {
-        return <div><Screen location={this.props.location} screenData={this.state.screenData} /></div>
+        const Component = this.props.loginComponent ? this.props.loginComponent : this.props.componentsWillUse[this.props.screenNumber];
+        return <div><Component location={this.props.location} screenData={this.state.screenData} /></div>
     }
 }
+
+

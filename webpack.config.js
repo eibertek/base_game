@@ -8,7 +8,8 @@ var config = {
   entry:  ['babel-polyfill', APP_DIR + '/ui/index.js'],
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    devtoolLineToLine: true,
   },
   plugins: [
     new webpack.ProvidePlugin({

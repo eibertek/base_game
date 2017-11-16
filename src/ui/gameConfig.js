@@ -2,61 +2,51 @@ export default {
     screen: [
         {
             initial: true,
-            title: "Character Creator",
-            achieved: [
-                'isCharacterCreated'
-            ],
+            component: 'home',
+            props: {},
+            auth: true,
+            title: "home",
+            description: 'Hello good person!',
+            gameProps: {
+                timer:false,
+                achieved:false,
+                maxTime:0,
+                objectMapping: [],
+                sceneMapping: [],
+                characterMapping:[],
+            },
+        },
+        {
+            initial: false,
+            component: 'screen',
+            props: {},
+            auth: false,
+            title: "screen 1",
             description: 'Please create your character, use the fields and choose wisely',
-            timer: false,
-            maxTime: 0,
+            gameProps: {
+                timer:false,
+                achieved:false,
+                maxTime:0,
+                objectMapping: [],
+                sceneMapping: [],
+                characterMapping:[],
+            },
         },
         {
             initial: false,
-            title: "Level 1",
-            achieved: [
-                'level_1_Won'
-            ],
-            description: 'Level 1',
-            timer: false,
-            maxTime: 0,
-        },
-        {
-            initial: false,
-            title: "Level 2",
-            achieved: [
-                'level_2_Won'
-            ],
-            description: 'Level 2',
-            timer: false,
-            maxTime: 0,
-            objectMapping: [
-                {
-                    name:'',
-                    type:'',
-                    destroyable:'',
-                    life:'',
-                    timeStart:'',
-                    points:'',
-                },
-                {
-                    name:'',
-                    type:'',
-                    destroyable:'',
-                    life:'',
-                    timeStart:'',
-                    points:'',
-                },
-                {
-                    name:'',
-                    type:'',
-                    destroyable:'',
-                    life:'',
-                    timeStart:'',
-                    points:'',
-                },
-            ],
-            sceneMapping: [],
-            characterMapping:[],
+            component: 'screen',
+            props: {},
+            auth: false,
+            title: "screen 2",
+            description: 'Please create your character, use the fields and choose wisely',
+            gameProps: {
+                timer:false,
+                achieved:false,
+                maxTime:0,
+                objectMapping: [],
+                sceneMapping: [],
+                characterMapping:[],
+            },
         },
     ]
 }
