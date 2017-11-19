@@ -8,7 +8,7 @@
     "build": "babel ./src/ --out-dir dist/ --ignore ./node_modules,./src/ui,./.babelrc,./package.json,./npm-debug.log --copy-files",
     "serve": "json-server db.json",
     "start": "npm run build && nodemon dist/index.js",
-    "build-ui": "webpack --watch",
+    "build-ui": "webpack -d --watch",
     "run-all": "run-p serve build-ui start"
   },
   "dependencies": {

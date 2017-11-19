@@ -1,6 +1,139 @@
 <testsuites name="jest tests">
-  <testsuite name="Link changes the class when hovered" tests="1" errors="0" failures="0" skipped="0" timestamp="2017-11-09T23:02:45" time="2.239">
-    <testcase classname="Link changes the class when hovered works AppProvider" name="Link changes the class when hovered works AppProvider" time="0.027">
+  <testsuite name="Link changes the class when hovered" tests="1" errors="0" failures="1" skipped="0" timestamp="2017-11-10T03:05:28" time="4.649">
+    <testcase classname="Link changes the class when hovered works AppProvider" name="Link changes the class when hovered works AppProvider" time="0.011">
+      <failure>TypeError: Cannot read property &apos;0&apos; of undefined
+    at new App (C:\Users\Mariano\web\spygame\src\ui\App.jsx:8:347)
+    at ReactShallowRenderer.render (C:\Users\Mariano\web\spygame\node_modules\react-test-renderer\cjs\react-test-renderer-shallow.development.js:130:26)
+    at C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:285:35
+    at withSetStateAllowed (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-utils\build\Utils.js:95:16)
+    at Object.render (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:284:68)
+    at new ShallowWrapper (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\ShallowWrapper.js:119:22)
+    at shallow (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\shallow.js:19:10)
+    at Object.&lt;anonymous&gt; (C:\Users\Mariano\web\spygame\src\ui\structure.component\tests\structure.spec.js:12:45)
+    at Object.asyncFn (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\jasmine_async.js:124:345)
+    at e (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:46:12)
+    at mapper (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:34:499)
+    at promise.then (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:74:39)
+    at process._tickCallback (internal/process/next_tick.js:109:7)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Link changes the class when hovered" tests="1" errors="0" failures="1" skipped="0" timestamp="2017-11-10T03:05:32" time="0.647">
+    <testcase classname="Link changes the class when hovered works AppProvider" name="Link changes the class when hovered works AppProvider" time="0.003">
+      <failure>TypeError: Cannot read property &apos;0&apos; of undefined
+    at new App (C:\Users\Mariano\web\spygame\src\ui\App.jsx:8:347)
+    at ReactShallowRenderer.render (C:\Users\Mariano\web\spygame\node_modules\react-test-renderer\cjs\react-test-renderer-shallow.development.js:130:26)
+    at C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:285:35
+    at withSetStateAllowed (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-utils\build\Utils.js:95:16)
+    at Object.render (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:284:68)
+    at new ShallowWrapper (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\ShallowWrapper.js:119:22)
+    at shallow (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\shallow.js:19:10)
+    at Object.&lt;anonymous&gt; (C:\Users\Mariano\web\spygame\src\ui\effect.component\tests\test.spec.js:12:45)
+    at Object.asyncFn (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\jasmine_async.js:124:345)
+    at e (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:46:12)
+    at mapper (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:34:499)
+    at promise.then (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:74:39)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Link changes the class when hovered" tests="1" errors="0" failures="1" skipped="0" timestamp="2017-11-10T03:05:33" time="0.562">
+    <testcase classname="Link changes the class when hovered works AppProvider" name="Link changes the class when hovered works AppProvider" time="0.003">
+      <failure>TypeError: Cannot read property &apos;0&apos; of undefined
+    at new App (C:\Users\Mariano\web\spygame\src\ui\App.jsx:8:347)
+    at ReactShallowRenderer.render (C:\Users\Mariano\web\spygame\node_modules\react-test-renderer\cjs\react-test-renderer-shallow.development.js:130:26)
+    at C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:285:35
+    at withSetStateAllowed (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-utils\build\Utils.js:95:16)
+    at Object.render (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:284:68)
+    at new ShallowWrapper (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\ShallowWrapper.js:119:22)
+    at shallow (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\shallow.js:19:10)
+    at Object.&lt;anonymous&gt; (C:\Users\Mariano\web\spygame\src\ui\character.component\tests\test.spec.js:12:45)
+    at Object.asyncFn (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\jasmine_async.js:124:345)
+    at e (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:46:12)
+    at mapper (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:34:499)
+    at promise.then (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:74:39)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Link changes the class when hovered" tests="1" errors="0" failures="1" skipped="0" timestamp="2017-11-10T03:05:34" time="0.586">
+    <testcase classname="Link changes the class when hovered works AppProvider" name="Link changes the class when hovered works AppProvider" time="0.004">
+      <failure>TypeError: Cannot read property &apos;0&apos; of undefined
+    at new App (C:\Users\Mariano\web\spygame\src\ui\App.jsx:8:347)
+    at ReactShallowRenderer.render (C:\Users\Mariano\web\spygame\node_modules\react-test-renderer\cjs\react-test-renderer-shallow.development.js:130:26)
+    at C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:285:35
+    at withSetStateAllowed (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-utils\build\Utils.js:95:16)
+    at Object.render (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:284:68)
+    at new ShallowWrapper (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\ShallowWrapper.js:119:22)
+    at shallow (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\shallow.js:19:10)
+    at Object.&lt;anonymous&gt; (C:\Users\Mariano\web\spygame\src\ui\level.component\tests\test.spec.js:12:45)
+    at Object.asyncFn (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\jasmine_async.js:124:345)
+    at e (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:46:12)
+    at mapper (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:34:499)
+    at promise.then (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:74:39)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Link changes the class when hovered" tests="1" errors="0" failures="1" skipped="0" timestamp="2017-11-10T03:05:34" time="0.571">
+    <testcase classname="Link changes the class when hovered works AppProvider" name="Link changes the class when hovered works AppProvider" time="0.003">
+      <failure>TypeError: Cannot read property &apos;0&apos; of undefined
+    at new App (C:\Users\Mariano\web\spygame\src\ui\App.jsx:8:347)
+    at ReactShallowRenderer.render (C:\Users\Mariano\web\spygame\node_modules\react-test-renderer\cjs\react-test-renderer-shallow.development.js:130:26)
+    at C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:285:35
+    at withSetStateAllowed (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-utils\build\Utils.js:95:16)
+    at Object.render (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:284:68)
+    at new ShallowWrapper (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\ShallowWrapper.js:119:22)
+    at shallow (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\shallow.js:19:10)
+    at Object.&lt;anonymous&gt; (C:\Users\Mariano\web\spygame\src\ui\object.component\tests\test.spec.js:12:45)
+    at Object.asyncFn (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\jasmine_async.js:124:345)
+    at e (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:46:12)
+    at mapper (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:34:499)
+    at promise.then (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:74:39)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Link changes the class when hovered" tests="1" errors="0" failures="1" skipped="0" timestamp="2017-11-10T03:05:35" time="0.587">
+    <testcase classname="Link changes the class when hovered works AppProvider" name="Link changes the class when hovered works AppProvider" time="0.003">
+      <failure>TypeError: Cannot read property &apos;0&apos; of undefined
+    at new App (C:\Users\Mariano\web\spygame\src\ui\App.jsx:8:347)
+    at ReactShallowRenderer.render (C:\Users\Mariano\web\spygame\node_modules\react-test-renderer\cjs\react-test-renderer-shallow.development.js:130:26)
+    at C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:285:35
+    at withSetStateAllowed (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-utils\build\Utils.js:95:16)
+    at Object.render (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:284:68)
+    at new ShallowWrapper (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\ShallowWrapper.js:119:22)
+    at shallow (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\shallow.js:19:10)
+    at Object.&lt;anonymous&gt; (C:\Users\Mariano\web\spygame\src\ui\rule.component\tests\test.spec.js:12:45)
+    at Object.asyncFn (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\jasmine_async.js:124:345)
+    at e (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:46:12)
+    at mapper (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:34:499)
+    at promise.then (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:74:39)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Link changes the class when hovered" tests="1" errors="0" failures="1" skipped="0" timestamp="2017-11-10T03:05:35" time="0.564">
+    <testcase classname="Link changes the class when hovered works AppProvider" name="Link changes the class when hovered works AppProvider" time="0.002">
+      <failure>TypeError: Cannot read property &apos;0&apos; of undefined
+    at new App (C:\Users\Mariano\web\spygame\src\ui\App.jsx:8:347)
+    at ReactShallowRenderer.render (C:\Users\Mariano\web\spygame\node_modules\react-test-renderer\cjs\react-test-renderer-shallow.development.js:130:26)
+    at C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:285:35
+    at withSetStateAllowed (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-utils\build\Utils.js:95:16)
+    at Object.render (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:284:68)
+    at new ShallowWrapper (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\ShallowWrapper.js:119:22)
+    at shallow (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\shallow.js:19:10)
+    at Object.&lt;anonymous&gt; (C:\Users\Mariano\web\spygame\src\ui\scene.component\tests\test.spec.js:12:45)
+    at Object.asyncFn (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\jasmine_async.js:124:345)
+    at e (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:46:12)
+    at mapper (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:34:499)
+    at promise.then (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:74:39)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Link changes the class when hovered" tests="1" errors="0" failures="1" skipped="0" timestamp="2017-11-10T03:05:36" time="0.568">
+    <testcase classname="Link changes the class when hovered works AppProvider" name="Link changes the class when hovered works AppProvider" time="0.003">
+      <failure>TypeError: Cannot read property &apos;0&apos; of undefined
+    at new App (C:\Users\Mariano\web\spygame\src\ui\App.jsx:8:347)
+    at ReactShallowRenderer.render (C:\Users\Mariano\web\spygame\node_modules\react-test-renderer\cjs\react-test-renderer-shallow.development.js:130:26)
+    at C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:285:35
+    at withSetStateAllowed (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-utils\build\Utils.js:95:16)
+    at Object.render (C:\Users\Mariano\web\spygame\node_modules\enzyme-adapter-react-16\build\ReactSixteenAdapter.js:284:68)
+    at new ShallowWrapper (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\ShallowWrapper.js:119:22)
+    at shallow (C:\Users\Mariano\web\spygame\node_modules\enzyme\build\shallow.js:19:10)
+    at Object.&lt;anonymous&gt; (C:\Users\Mariano\web\spygame\src\ui\screen.component\tests\test.spec.js:12:45)
+    at Object.asyncFn (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\jasmine_async.js:124:345)
+    at e (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:46:12)
+    at mapper (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:34:499)
+    at promise.then (C:\Users\Mariano\web\spygame\node_modules\jest-jasmine2\build\queue_runner.js:74:39)</failure>
     </testcase>
   </testsuite>
 </testsuites>

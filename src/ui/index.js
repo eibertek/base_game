@@ -15,7 +15,7 @@ export const AppProvider = ({ store }) => {
     return <Provider store={store}>
         <Router>
             <Switch>
-                <Route exact  path="/" component={App} />
+                <Route exact path="/:loggedIn?" component={App} />
                 <Route exact path="/screen/:number" render={(props) => (
                     <App {...props} screenNumber={props.match.params.number} />)}/>
                 />
