@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 
 const mapStateToProps = (state, ownProps) => {
     let component = null;
-    console.log(ownProps.screenData);
     if(ownProps.screenData.initial===true) {
         // traer el character creator
         component = <div>HOME COMPONENT {ownProps.screenData.title}</div>
