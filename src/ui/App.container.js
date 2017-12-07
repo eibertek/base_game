@@ -23,10 +23,11 @@ const normalProps = (state, props) => {
 
 const mapStateToProps = (state, props) => {
     const loggedIn = !!state.login;
-    if(loggedIn === true) {
-        return normalProps(state, props);
-    }else{
+    const screenNumber = props.screenNumber || 0;
+    if(gameConfig.screen[screenNumber].auth && loggedIn !== true) {
         return loginPageProps(state, props);
+    }else{
+        return normalProps(state, props);
     }
 };
 

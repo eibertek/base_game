@@ -4,7 +4,9 @@ import character from '../screen.component';
 import effects from '../screen.component';
 import object from '../screen.component';
 import login from '../commons/login.component';
-import home from '../commons/home.component';
+import title from '../commons/title.component';
+import text from '../commons/text.component';
+import button from '../commons/button.component';
 
 export default {
     screen,
@@ -13,5 +15,7 @@ export default {
     effects,
     object,
     login,
-    home,
+    title,
+    text,
+    button,
 };
