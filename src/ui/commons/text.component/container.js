@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import StructureComponent from "./index.jsx";
-import components from '../../utils/libray';
+import components from 'ui/utils/libray';
 
 
 const renderChildrenComponents = (p) => {
@@ -12,8 +12,9 @@ const renderChildrenComponents = (p) => {
 
 
 const mapStateToProps = (state, ownProps) => {
+    const { onClick, className, text } = ownProps;
     const component = <div>
-        <div onClick={ownProps.onClick}>{ownProps.text}</div>
+        <div onClick={onClick} className={className} >{text}</div>
         {renderChildrenComponents(ownProps)}
         </div>
     return {

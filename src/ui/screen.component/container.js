@@ -1,7 +1,7 @@
 import StructureComponent from "./index.jsx";
-import components from '../utils/libray';
+import components from 'commons/library';
 import {connect} from 'react-redux';
-
+import './styles.scss';
 
 const renderChildrenComponents = (p) => {
     return p.childComponents ? p.childComponents.map( (c, i) => {
@@ -10,9 +10,9 @@ const renderChildrenComponents = (p) => {
     }) : null;
 }
 
-
 const mapStateToProps = (state, ownProps) => {
     let component = null;
+    console.log(ownProps);
     if(ownProps.screenData.initial===true) {
         // traer el character creator
         component = <div>{renderChildrenComponents(ownProps.screenData.props)}</div>

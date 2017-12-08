@@ -22,6 +22,10 @@ var config = {
             path.resolve('./src'),
             'node_modules',
         ],
+        alias: {
+            ui: path.resolve(__dirname, 'src/ui/'),
+            commons: path.resolve(__dirname, 'src/ui/commons'),
+        },
         extensions: ['.js', '.jsx'],
     },
  module : {

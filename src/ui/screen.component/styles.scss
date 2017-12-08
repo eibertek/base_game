@@ -1,0 +1,19 @@
+.screen1 {
+  &_title {
+    display:flex;
+    font-family: Arial;
+    font-size: 3em;
+  }
+
+  &_description {
+    font-family: Arial;
+  }
+
+  &_button {
+    font-family: Arial;
+    font-size:4em;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+}

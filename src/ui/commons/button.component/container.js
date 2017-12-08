@@ -1,11 +1,14 @@
-import StructureComponent from "./index.jsx";
+import Button from "./index.jsx";
 import {connect} from 'react-redux';
 
 const mapStateToProps = (state, ownProps) => {
-    const component = <button onClick={ownProps.onClick}>{ownProps.text}</button>
-    return {
-        component,
-    };
+    return {};
 };
 
-export default connect(mapStateToProps, (dispatch)=>{return {}})(StructureComponent);
+const dispatchToProps = (dispatch, props) => {
+    return {
+        goNext: dispatch(props.goNext),
+    }
+}
+
+export default connect(mapStateToProps, (dispatch)=>{return {}})(Button);
