@@ -1,6 +1,6 @@
 import ScreenComponent from "./index.jsx";
 import Actions from "./actions/";
-import components, {compose} from 'commons/library';
+import components, {Compose} from 'commons/library';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux';
 import './styles.scss';
@@ -18,7 +18,9 @@ const renderChildrenComponents = (p) => {
 }
 
 const mapStateToProps = (state, ownProps) => {
-    const Component = <compose>{renderChildrenComponents(ownProps.screenData.props)}</compose>
+    console.log(ownProps.screenData.props);
+    
+    const Component = <Compose>{renderChildrenComponents(ownProps.screenData.props)}</Compose>
     return {
         Component,
     };

@@ -1,3 +1,3 @@
-import ComposeComponent from './container';
+import ComposeComponent from './index.jsx';
 
 export default ComposeComponent;

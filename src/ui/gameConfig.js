@@ -17,7 +17,7 @@ export default {
                           onClick: (evt)=> console.log(evt),
                       },
                     },
-                    { component:'text',
+                    { component:'Compose',
                         props:{
                             childComponents: [
                                 {
