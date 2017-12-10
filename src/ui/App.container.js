@@ -14,7 +14,7 @@ const loginPageProps = (state, props) => {
 const normalProps = (state, props) => {
     const componentsWillUse = gameConfig.screen.map( screen => components[screen.component]);
     return {
-        characters: state.charStructure.characters,
+    //    characters: state.charStructure.characters,
         screens: gameConfig.screen,
         componentsWillUse,
         screenNumber: props.screenNumber ? props.screenNumber : 0,

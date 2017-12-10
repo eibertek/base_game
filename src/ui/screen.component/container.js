@@ -1,31 +1,33 @@
-import StructureComponent from "./index.jsx";
-import components from 'commons/library';
-import {connect} from 'react-redux';
+import ScreenComponent from "./index.jsx";
+import Actions from "./actions/";
+import components, {compose} from 'commons/library';
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux';
 import './styles.scss';
 
 const renderChildrenComponents = (p) => {
     return p.childComponents ? p.childComponents.map( (c, i) => {
         const Component = components[c.component];
-        return <Component key={i} {...c.props} />;
+        const { onClick, ...props } = c.props;
+        const customClick = (evt) => {
+                console.log('onClick screen component -', c.props);
+                return onClick();
+        }
+        return <Component key={i} {...props} onClick={customClick} />;
     }) : null;
 }
 
 const mapStateToProps = (state, ownProps) => {
-    let component = null;
-    console.log(ownProps);
-    if(ownProps.screenData.initial===true) {
-        // traer el character creator
-        component = <div>{renderChildrenComponents(ownProps.screenData.props)}</div>
-    }else{
-        // traer el scenary con los datos de scenary y dentro de este los datos de object y characters
-        component = <div><div>{ownProps.screenData.title}</div> <div>Personajes <button>CREAR</button></div>
-            <div>{state.charStructure.characters ? state.charStructure.characters.map((character) =>
-                <div key={character.name}>{character.name} - {character.power}</div>) : null }</div>
-        </div>
-    }
+    const Component = <compose>{renderChildrenComponents(ownProps.screenData.props)}</compose>
     return {
-        component,
+        Component,
     };
 };
 
-export default connect(mapStateToProps, (dispatch)=>{return {}})(StructureComponent);
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {
+        actions: bindActionCreators(Actions, dispatch),
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ScreenComponent);

@@ -1,4 +1,4 @@
-export const StructureComponent = (props) => props.component;
+const Render = ({ Component, ...props}) => React.cloneElement(Component, props);
 
-export default StructureComponent;
+export default Render;
 

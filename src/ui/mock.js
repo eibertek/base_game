@@ -11,7 +11,13 @@ export default {
       }
     }
   },
-  "charStructure":{
+  "screen": {},
+}
+
+
+/**
+ * 
+   "charStructure":{
       "characters": [
           {"name":"MegaMan", "power":"blast"},
           {"name":"NitroMan", "power":"explosion"},
@@ -20,4 +26,4 @@ export default {
           {"name":"Condemned", "power":"Death Strike"},
       ]
   }
-}
+ */

@@ -19,23 +19,23 @@ export default {
                     },
                     { component:'text',
                         props:{
-                            text: 'This is a test for a game dev tool framework type sarasa',
-                            className:'screen1_description',
-                            onClick: ()=>{},
                             childComponents: [
+                                {
+                                  component:'text',  
+                                  props:{
+                                    text: 'This is a test for a game dev tool framework type sarasa',
+                                    className:'screen1_description',
+                                    onClick: ()=>{},                                      
+                                  },
+                                },
                                 { component:'button',
                                   props:{
                                     className:'screen1_button',
-                                    goNext: () => ({ type: 'GET',
-                                                     action: {
-                                                           stage:1
-                                                            }
-                                                    }),
-                                    onClick: (evt) => console.log(this),
+                                    action:'setLevel',
+                                    onClick: (evt) => {},
                                     text: 'S T A R T',
                                   }
                                 },
-
                             ],
                         },
                     }
