@@ -14,10 +14,13 @@ export default {
                       props:{
                           className:'screen1_title',
                           text: 'GAME DEV TOOL',
-                          onClick: (evt)=> console.log(evt),
+                          onClick: {
+                              action:'setLevel',
+                              event: (evt) => {},
+                          },
                       },
                     },
-                    { component:'Compose',
+                /*    { component:'Compose',
                         props:{
                             childComponents: [
                                 {
@@ -38,7 +41,7 @@ export default {
                                 },
                             ],
                         },
-                    }
+                    }*/
                 ],
                 objectMapping: [],
                 sceneMapping: [],

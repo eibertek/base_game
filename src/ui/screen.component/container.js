@@ -8,21 +8,16 @@ import './styles.scss';
 const renderChildrenComponents = (p) => {
     return p.childComponents ? p.childComponents.map( (c, i) => {
         const Component = components[c.component];
-        const { onClick, ...props } = c.props;
-        const customClick = (evt) => {
-                console.log('onClick screen component -', c.props);
-                return onClick();
-        }
-        return <Component key={i} {...props} onClick={customClick} />;
+        const { ...props } = c.props;
+        return <Component key={i} {...props} />;
     }) : null;
 }
 
 const mapStateToProps = (state, ownProps) => {
-    console.log(ownProps.screenData.props);
-    
-    const Component = <Compose>{renderChildrenComponents(ownProps.screenData.props)}</Compose>
+    console.log('PROPS ON SCREEN', ownProps.screenData.props);
+    const childComponents = renderChildrenComponents(ownProps.screenData.props);
     return {
-        Component,
+        childComponents,
     };
 };
 
