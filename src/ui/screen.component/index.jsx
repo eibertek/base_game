@@ -1,5 +1,9 @@
 import { Component, cloneElement } from 'react';
 export default class Render extends Component {
+    constructor() {
+        super();
+        this.onCustomClick = this.onCustomClick.bind(this);
+    }
 
     onCustomClick(clickObject) {
         return (evt) => {
