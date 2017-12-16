@@ -22,7 +22,7 @@ export default {
                                 {
                                   component:'text',  
                                   props:{
-                                    text: "This is a test for a game dev tool framework type sarasa ${storeMe}",
+                                    text: "This is a test for a game dev tool framework type sarasa",
                                     className:'screen1_description',
                                   },
                                 },

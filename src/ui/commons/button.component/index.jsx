@@ -6,7 +6,8 @@ class Button extends React.Component {
     }
 
     render() {
-        const { className, text, onClick } = this.props;
+        const { className, text, onClick, storeMe } = this.props;
+        console.log('STORMEEEE', storeMe);
         return <button onClick={onClick} className={className} >{text}</button>
     }
 }

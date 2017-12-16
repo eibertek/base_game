@@ -15,13 +15,14 @@ const renderChildrenComponents = (p) => {
 
 const mapStateToProps = (state, ownProps) => {
     const childComponents = renderChildrenComponents(ownProps.screenData.props);
+    console.log(state.screen.storeme);
     return {
-        storeMe: state.storeme,
+        storeMe: state.screen.storeme,
         childComponents,
     };
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
     return {
         actions: bindActionCreators(Actions, dispatch),
     }

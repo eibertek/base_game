@@ -15,8 +15,12 @@ export default class Render extends Component {
         return onClick;
     }
 
+  componentDidUpdate() {
+        console.log('WTF???');
+  }
   render(){
-    const { childComponents, actions, ...props } = this.props;
+    const { childComponents, actions, storeMe, ...props } = this.props;
+    console.log('LEVEL???', storeMe);
     return <div>
         {childComponents.map( c => {
           return cloneElement(c, { actions, onClick: this.onCustomClick(c.props) })

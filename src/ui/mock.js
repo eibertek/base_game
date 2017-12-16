@@ -11,7 +11,9 @@ export default {
       }
     }
   },
-  "screen": {},
+  "screen": {
+    storeme: 0,
+  },
 }
 
 
