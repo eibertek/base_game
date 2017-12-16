@@ -14,13 +14,9 @@ export default {
                       props:{
                           className:'screen1_title',
                           text: 'GAME DEV TOOL',
-                          onClick: {
-                              action:'setLevel',
-                              event: (evt) => {},
-                          },
                       },
                     },
-                /*    { component:'Compose',
+                    { component:'Compose',
                         props:{
                             childComponents: [
                                 {
@@ -28,20 +24,21 @@ export default {
                                   props:{
                                     text: 'This is a test for a game dev tool framework type sarasa',
                                     className:'screen1_description',
-                                    onClick: ()=>{},                                      
                                   },
                                 },
                                 { component:'button',
                                   props:{
                                     className:'screen1_button',
-                                    action:'setLevel',
-                                    onClick: (evt) => {},
+                                    onClick: {
+                                      action:'setLevel',
+                                      event: (evt) => console.log('Sube NIVEL'),
+                                    },
                                     text: 'S T A R T',
                                   }
                                 },
                             ],
                         },
-                    }*/
+                    }
                 ],
                 objectMapping: [],
                 sceneMapping: [],

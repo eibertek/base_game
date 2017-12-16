@@ -9,7 +9,7 @@ export default class titleComponent extends PureComponent {
             actions[action](1);
             onClick(evt);
         }
-        return <div onClick={onCustomClick} className={className} >{text}</div>
+        return <div onClick={onClick} className={className} >{text}</div>
     }
 }
 
