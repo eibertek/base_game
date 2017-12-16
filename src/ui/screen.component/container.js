@@ -14,9 +14,9 @@ const renderChildrenComponents = (p) => {
 }
 
 const mapStateToProps = (state, ownProps) => {
-    console.log('PROPS ON SCREEN', ownProps.screenData.props);
     const childComponents = renderChildrenComponents(ownProps.screenData.props);
     return {
+        storeMe: state.storeme,
         childComponents,
     };
 };
