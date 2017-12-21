@@ -11,22 +11,22 @@ const loginPageProps = (state, props) => {
     };
 }
 
-const normalProps = (state, props) => {
+const normalProps = (state, number, props) => {
     const componentsWillUse = gameConfig.screen.map( screen => components[screen.component]);
     return {
         screens: gameConfig.screen,
         componentsWillUse,
-        screenNumber: props.screenNumber ? props.screenNumber : 0,
+        screenNumber: number,
     };
 }
 
 const mapStateToProps = (state, props) => {
-    const loggedIn = !!state.login;
-    const screenNumber = props.screenNumber || 0;
+    const loggedIn = !!state.config.login;
+    const screenNumber =  state.screen.storeme || 0;
     if(gameConfig.screen[screenNumber].auth && loggedIn !== true) {
         return loginPageProps(state, props);
     }else{
-        return normalProps(state, props);
+        return normalProps(state, screenNumber, props);
     }
 };
 

@@ -19,12 +19,12 @@ export default class Compose extends Component {
     }
 
     render(){
-        const { childComponents, actions, ...props } = this.props;
+        const { childComponents, actions, parentProps } = this.props;
         return <div>
             {childComponents.map( (c, i) => {
                 const Component = components[c.component];
-                const { onClick, ...cProps } = c.props;
-                return <Component key={i} {...cProps} actions={actions} onClick={this.onCustomClick(onClick)} />
+                const { onClick, ...props } = c.props;
+                return <Component key={i} {...props} {...parentProps} actions={actions} onClick={this.onCustomClick(onClick)} />
             })}
         </div>
     }
