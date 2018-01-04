@@ -8,7 +8,6 @@ export default class Compose extends Component {
     }
 
     onCustomClick(onClick) {
-        console.log(onClick);
         if(onClick && onClick.action && onClick.event) {
             return (evt) => {
                 this.props.actions[onClick.action](1);

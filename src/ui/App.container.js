@@ -21,7 +21,7 @@ const normalProps = (state, number, props) => {
 }
 
 const mapStateToProps = (state, props) => {
-    const loggedIn = !!state.config.login;
+    const loggedIn = !!state.config.structure.login;
     const screenNumber =  state.screen.storeme || 0;
     if(gameConfig.screen[screenNumber].auth && loggedIn !== true) {
         return loginPageProps(state, props);

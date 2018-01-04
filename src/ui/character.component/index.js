@@ -1,3 +1,3 @@
-import structure from './character.container';
+import structure from './container';
 
 export default structure;

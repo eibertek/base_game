@@ -2,7 +2,7 @@ export default {
   "config": {
     "database":"Chars",
     "service": null,
-    "store":{
+    "structure":{
       "character":{
         "fields":[
           { "name":"name", "defaultValue":"", "required":true, "type":"string", "unique":true},

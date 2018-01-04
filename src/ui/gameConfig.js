@@ -65,14 +65,10 @@ export default {
                         props:{
                             childComponents: [
                                 {
-                                    component:'text',
+                                    component:'CharacterComponent',
                                     props:{
-                                        text: "This is a test for a screen 2 on game dev tool",
-                                        onClick: {
-                                            action:'setLevel',
-                                            event: (evt) => console.log('Sube NIVEL'),
-                                        },
                                         className:'screen1_description',
+                                        strategy:'selection',
                                     },
                                 },
                             ],
@@ -97,7 +93,7 @@ export default {
                     { component:'title',
                         props:{
                             className:'screen1_title',
-                            text: 'SCREEEN 2',
+                            text: 'YOU WOULD START',
                         },
                     },
                     { component:'Compose',
@@ -106,12 +102,19 @@ export default {
                                 {
                                     component:'text',
                                     props:{
-                                        text: "This is a test for a screen 3 on game dev tool",
+                                        text: "If the dev already written code for start a game :)",
                                         onClick: {
                                             action:'setLevel',
                                             event: (evt) => console.log('Sube NIVEL'),
                                         },
                                         className:'screen1_description',
+                                    },
+                                },
+                                {
+                                    component:'CharacterComponent',
+                                    props:{
+                                        className:'screen1_description',
+                                        strategy:'character',
                                     },
                                 },
                             ],

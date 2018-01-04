@@ -1,6 +1,6 @@
 export default (state={},action)=>{
     switch (action.type) {
-        case 'LOGIN': 
+        case 'LOGIN':
             return Object.assign({}, state, {
                 login: action.login
             });

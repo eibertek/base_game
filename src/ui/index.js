@@ -8,10 +8,13 @@ import AboutComponent from './about.jsx';
 import config from './mock.js';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import structureReducer from './structure.component/reducers/structure.reducer';
+import characterReducer from './character.component/reducers/reducer';
 import screenReducer from './screen.component/reducers/reducer';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(combineReducers({config: structureReducer, screen:screenReducer}), config, composeEnhancers(applyMiddleware(thunk)));
+const store = createStore(combineReducers({config: combineReducers({ structure:structureReducer,
+        character: characterReducer}),
+    screen:screenReducer}), config, composeEnhancers(applyMiddleware(thunk)));
 
 export const AppProvider = ({ store }) => {
     return <Provider store={store}>
