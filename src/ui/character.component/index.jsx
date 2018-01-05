@@ -18,6 +18,7 @@ export default class CharacterComponent extends Component {
             actions: props.actions,
         };
         if(strategy === 'creation') newProps['fields'] = props.characterStructure.fields;
+        if(strategy === 'selection') newProps['savedCharacters'] = props.savedCharacters;
         if(strategy === 'character') newProps['characterData'] = props.characterData;
         return <Component {...newProps} />
     }

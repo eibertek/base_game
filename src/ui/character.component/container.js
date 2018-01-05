@@ -8,6 +8,7 @@ const mapStateToProps = (state, ownProps) => {
     return {
         characterStructure: state.config.structure.character,
         characterData: state.config.character.newChar,
+        savedCharacters: state.config.savedCharacters,
         strategy,
     };
 };

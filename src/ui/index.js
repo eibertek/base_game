@@ -13,7 +13,7 @@ import screenReducer from './screen.component/reducers/reducer';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(combineReducers({config: combineReducers({ structure:structureReducer,
-        character: characterReducer}),
+        character: characterReducer, savedCharacters: (state={}, action) => state, }),
     screen:screenReducer}), config, composeEnhancers(applyMiddleware(thunk)));
 
 export const AppProvider = ({ store }) => {
