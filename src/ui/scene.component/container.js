@@ -1,8 +1,29 @@
-import StructureComponent from "./index.jsx";
-import {connect} from 'react-redux';
+import SceneComponent from "./index.jsx";
+import Actions from "./actions/";
+import components from 'commons/library';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+
+const renderChildrenComponents = (p) => {
+    return p.childComponents ? p.childComponents.map( (c, i) => {
+        const Component = components[c.component];
+        const { ...props } = c.props;
+        return <Component key={i} {...props} />;
+    }) : null;
+}
 
 const mapStateToProps = (state, ownProps) => {
-    return {characters: state.charStructure.characters};
+    const childComponents = renderChildrenComponents(ownProps.screenData.props);
+    return {
+        storeMe: state.screen.storeme,
+        childComponents,
+    };
 };
 
-export default connect(mapStateToProps, (dispatch)=>{return {}})(StructureComponent);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        actions: bindActionCreators(Actions, dispatch),
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SceneComponent);

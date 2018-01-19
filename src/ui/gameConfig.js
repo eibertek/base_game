@@ -82,7 +82,7 @@ export default {
         },
         {
             initial: false,
-            component: 'screen',
+            component: 'scene',
             auth: true,
             props: {
                 timer:false,
@@ -104,8 +104,9 @@ export default {
                                     props:{
                                         text: "If the dev already written code for start a game :)",
                                         onClick: {
-                                            action:'setLevel',
-                                            event: (evt) => console.log('Sube NIVEL'),
+                                            action:'getDamage',
+                                            params: 200,
+                                            event: (evt) => console.log('DAÑ0 200'),
                                         },
                                         className:'screen1_description',
                                     },

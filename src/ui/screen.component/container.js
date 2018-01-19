@@ -1,6 +1,6 @@
 import ScreenComponent from "./index.jsx";
 import Actions from "./actions/";
-import components, {Compose} from 'commons/library';
+import components from 'commons/library';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux';
 import './styles.scss';

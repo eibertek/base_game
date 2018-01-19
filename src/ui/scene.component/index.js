@@ -1,3 +1,3 @@
-import structure from './character.container';
+import scene from './container';
 
-export default structure;
+export default scene;
